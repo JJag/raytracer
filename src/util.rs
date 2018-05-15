@@ -1,5 +1,6 @@
-use rand::{self, Rng};
+use rand;
 
+#[inline]
 pub fn rand_f32() -> f32 {
-    rand::thread_rng().gen()
+    rand::random()
 }
